@@ -1,0 +1,2 @@
+module SoupsHelper
+end

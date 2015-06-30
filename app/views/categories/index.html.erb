@@ -1,0 +1,7 @@
+<h1>Soup categories</h1>
+
+        <ul>
+            <% @categories.each do |category| %>
+                <li> <%= link_to category.name, category %> (<%= category.soups.count %>)</li>
+            <% end %>
+        </ul>
