@@ -1,0 +1,8 @@
+<h1><%= @soup.name %></h1>
+
+<% if @soup.featured? %>
+    <p>This decilicious soup is featured this month. </p> 
+<% else %>
+    <p> This soup is not in season </p>
+<% end %>
+<%= link_to "toggle featured", toggle_featured_path%>
